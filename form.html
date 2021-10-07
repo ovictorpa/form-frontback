@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form-style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">Cadastro de Estudantes</h1>
+        <p id="subtitulo">Complete com as suas informações</p>
+    </div>
+    
+    <form action="http://localhost:3003/estudantes" method="POST">
+
+        <fieldset class = primeiro class="grupo">
+            <br>
+            <hr>
+            <label class="grande" ><h3>Dados Pessoais</h3></label>
+            <hr>
+            <div class="campo">
+               
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            </div>
+
+    
+
+            <div class="campo">
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" name="data" id="data" placeholder="Data de Nascimento" required>
+                
+                <select id="estado" required>
+
+                    <option selected disabled value="">Estado</option>
+                    <option>AC</option> <option>AL</option><option>AP</option>
+                    <option>AM</option><option>BA</option><option>CE</option>
+                    <option>DF</option><option>ES</option><option>GO</option>
+                    <option>MA</option><option>MT</option><option>MS</option>
+                    <option>MG</option><option>PA</option><option>PB</option>
+                    <option>PR</option><option>PE</option><option>PI</option>
+                    <option>RR</option><option>RO</option><option>RJ</option>
+                    <option>RN</option><option>RS</option><option>SC</option>
+                    <option>SP</option><option>SE</option><option>TO</option>
+
+                </select>
+        
+            </div>
+
+    
+
+            <div class="campo">
+                <label for="genero">Gênero:</label>
+                <label><input type="radio" id ="genero" name="genero" value="homem" required> Masculino</label>
+                <label><input type="radio" id ="genero" name="genero" value="mulher"required> Feminino</label>
+                <label><input type="radio" id ="genero" name="genero" value="outo" required> Outro</label>
+            </div>
+            <br>
+            <hr>
+            <label class="grande" ><h3>Informações de contato</h3></label>
+           <hr>
+            <div class="campo">
+                <label><input type="email" class="contato" name="email" id="email" placeholder="E-mail"required></label>
+                <label><input type="number" class="contato" name="telefone" id="telefone" placeholder="Telefone" required></label>
+            </div>
+
+            <br>
+
+        </fieldset>
+
+        <fieldset class = "segundo"class="grupo">
+            <hr>
+            <label label class="grande"><h3>Curso de Interesse</h3></label>
+           <hr>
+
+            <div class="campo">
+        
+                <select id="curso" required>
+
+                    <option selected disabled value="">Curso</option>
+                    <option>Design Digital</option>
+                    <option>Matemática Computacional</option>
+                    <option>Programação</option>
+                    <option>UX/UI</option>
+                    <option>Tecnologias da Informação</option>
+
+                </select>
+            </div>
+<br>
+
+            <div class="campo">
+                <label for="modalidade"><strong>Modalidade:</strong></label>
+                <label><input type="radio" name="modalidade" value="presencial"> Presencial </label>
+                <label><input type="radio" name="modalidade" value="EAD"> EAD </label>
+                <label><input type="radio" name="modalidade" value="hibrido"> Híbrido</label>
+            </div>
+
+<br>
+            <div class="campo">
+                <label for="nivel"><strong>Nível:</strong></label>
+                <label><input type="radio" name="nivel" value="iniciante"> Iniciante</label>
+                <label><input type="radio" name="nivel" value="intermediario"> Intermediário</label>
+                <label><input type="radio" name="nivel" value="avancado"> Avançado</label>
+            </div>
+
+            <br>
+
+        </fieldset>
+
+        <fieldset class="grupo">
+            <hr>
+            <label class="grande"><h3>Objetivos com o Curso</h3></label>
+            <hr>
+            <div id="checkbox" class="campo">
+            <label for="obj"><strong>Por qual motivo você está assinando nossos cursos?</strong></label><br><br>
+            
+            <input type="checkbox" id="obj" name="obj1" value="estudo">
+            <labeL for="obj1">Sou estudante da área</label><br>
+            <input type="checkbox" id="obj" name="obj2" value="trabalho">
+            <labeL for="obj2">Pretendo trabalhar na área</label><br>
+            <input type="checkbox" id="obj" name="obj3" value="amador">
+            <labeL for="obj3">Sou iniciante e quero conhecer a área</label><br>
+            <input type="checkbox" id="obj" name="obj4" value="hc">
+            <labeL for="obj4">Para completar cargas de Horas Complementares</label><br><br>
+            <label for ="obj">Outro motivo:</label><br>
+            <textarea row=8 style="width: 7cm;">Conte-nos :)</textarea>
+    
+            </div>
+
+        </fieldset>
+        <br>
+
+        <button class="botao" type="submit" id="enviar" name="enviar" value="Enviar"><b>Enviar</b></button>
+        <button class="botao" type="reset" id="limpar" name="limpa" value="Cancelar"><b>Cancelar</b></button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+*{
+
+    margin: 0;
+	padding: 0;
+	color: inherit;
+	box-sizing: inherit;
+
+
+}
+
+html{
+
+    box-sizing: border-box;
+}
+
+body{
+
+
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5%;
+
+    background-image: url(https://i.pinimg.com/originals/ff/ec/85/ffec85cf860576cffd2256f145c2ad3b.jpg);
+
+
+    color: black;
+    font-family: sans-serif;
+
+
+}
+
+#titulo{
+
+    font-family: sans-serif;
+    margin-left: 20%;
+    color: white;
+
+}
+
+#subtitulo{
+
+    font-family: sans-serif;
+    margin-left: 27%;
+    margin-bottom: 5%;
+    color: white;
+    
+}
+
+.primeiro{
+
+    border-radius: 2% 2% 0 0;
+
+}
+
+
+fieldset{
+
+    
+    background-color: white;
+    border-color: white;
+    border-style: double;
+    box-shadow: 0 21px 41px -13px rgb(0 0 0 / 18%);
+}
+
+.campo{
+
+margin-left: 6%;
+margin-top: 1%;
+justify-content: center;
+
+}
+
+h3{
+
+margin-top: 1%;
+margin-left: 30%;
+justify-content: center;
+color: teal;
+
+
+}
+
+input{
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.linha{
+
+    margin-top: 1%;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="radio"], input[type ="date"] select{
+
+
+    border: solid 0.5px #008080; 
+    padding: 0.2em;   
+}
+
+input[type="text"], input[type="email"], input[type="number"],  input[type ="date"] {
+
+    margin-right: 4%;
+    box-decoration-break: slice;
+    border-radius: 4px solid;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+.contato{
+
+    float: inline-start;
+    
+}
+
+.junto{
+
+    margin-left: 3%;
+
+}
+
+.botao{
+
+border: 0;
+background-color: white;
+padding: 0.5em;
+border-radius: 10%;
+
+}
+
+.botao:hover{
+
+color: white;
+background-color:seagreen;
+border-color: 1px white;
+box-shadow: 1px 1px 1px 1px white;
+border-radius: 10%;
+
+}
+
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover,  input[type ="date"]:hover, select:hover, textarea:hover{
+
+    background-coloR: gainsboro;
+    color:black;
+    border-style: groove;
+    
+
+}
+
+input[type="radio"]:hover, input[type="checkbox"]:hover{
+
+background-color: gainsboro;
+color:black;
+
+
+}
+
+hr{
+
+background-color: #66CDAA;
+margin-bottom: 2%;
+margin-top: 2%;
+
+}
+
+select, input[type="radio"], textarea{
+
+padding: 10px;
+border: 1px solid rgba(0,0,0,.1);
+
+}
+
